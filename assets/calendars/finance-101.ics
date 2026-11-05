@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//WIB//Society Events//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:finance-101-2026-10-08@wib-calendar
+DTSTAMP:20261008T120000Z
+DTSTART:20261008T120000Z
+DTEND:20261008T130000Z
+SUMMARY:Finance 101
+LOCATION:FAB 0.03\, University of Warwick
+DESCRIPTION:A careers panel with six Warwick finance societies\, including 
+ WIB.
+URL:https://www.instagram.com/warwick.wms/p/DeFOlc1O_HQ/
+END:VEVENT
+END:VCALENDAR

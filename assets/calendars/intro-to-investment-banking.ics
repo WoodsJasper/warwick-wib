@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//WIB//Society Events//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:intro-to-investment-banking-2026-10-21@wib-calendar
+DTSTAMP:20261021T120000Z
+DTSTART:20261021T120000Z
+DTEND:20261021T130000Z
+SUMMARY:Intro to Investment Banking
+LOCATION:R0.12
+DESCRIPTION:The first session in the Technical Skills Series\, with Warwick
+  Women in Economics.
+URL:https://www.instagram.com/warwickinvestmentbanking/p/Det5XTUDa1Z/
+END:VEVENT
+END:VCALENDAR

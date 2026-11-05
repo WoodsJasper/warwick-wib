@@ -1,0 +1,98 @@
+/* Home composition follows the requested Goldman Sachs investment-banking page.
+   System fonts approximate its serif / condensed sans hierarchy.
+   The WBS London campus photographs are labelled separately from WIB events. */
+.page-home{--sans:Arial,Helvetica,sans-serif;--home-heading:'Arial Narrow','Helvetica Neue',Arial,sans-serif}
+.page-home main h2,.page-home main h3{font-family:var(--home-heading);font-weight:400;font-stretch:condensed;letter-spacing:-.035em}
+.page-home .site-header{min-height:76px;padding-block:10px}
+.page-home .brand{width:215px}
+.ib-hero{position:relative;isolation:isolate;min-height:650px;display:flex;align-items:end;color:#fff;background:var(--teal)}
+.ib-hero-photo{position:absolute;inset:0;z-index:-3;width:100%;height:100%;object-fit:cover;object-position:center 43%}
+.ib-hero::after{content:'';position:absolute;inset:0;z-index:-2;background:linear-gradient(180deg,rgba(0,12,16,.12) 5%,rgba(0,12,16,.22) 30%,rgba(0,12,16,.73) 100%)}
+.ib-hero-content{padding-top:200px;padding-bottom:70px}
+.ib-hero .eyebrow{font-size:12px;letter-spacing:.07em;font-weight:500;margin-bottom:18px}
+.ib-hero h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(49px,5.7vw,82px);line-height:1.05;letter-spacing:-.035em;max-width:1100px}
+.ib-hero-intro{font-size:16px;line-height:1.7;margin-top:24px;max-width:650px;font-weight:500}
+.ib-hero-actions{display:flex;align-items:center;gap:30px;margin-top:29px}
+.ib-button-white{background:#fff;color:#111;border-color:#fff}
+.ib-button-white:hover{background:var(--gold);border-color:var(--gold)}
+.ib-hero-actions .line-link{font-size:13px}
+.ib-photo-credit{position:absolute;right:var(--gutter);bottom:17px;font-size:9px;color:#dce4e4}
+.ib-about{display:grid;grid-template-columns:1fr 1.5fr;gap:80px;padding-block:68px 72px}
+.ib-about h2{font-size:58px;letter-spacing:-.035em}
+.ib-about p{font-size:17px;line-height:1.75;max-width:670px}
+.ib-about .button{margin-top:27px;font-size:12px}
+.ib-latest{padding-block:10px 68px}
+.ib-section-heading{display:flex;align-items:center;justify-content:space-between;gap:30px;border-bottom:1px solid var(--line);padding-bottom:15px;margin-bottom:32px}
+.page-home .ib-section-heading h2{font:700 24px/1.4 var(--sans);letter-spacing:-.025em}
+.ib-section-heading .line-link{font-size:12px}
+.ib-news-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:40px}
+.ib-lead-story img{width:100%;aspect-ratio:4/3;object-fit:contain;object-position:center}
+.ib-lead-story figcaption{padding-top:19px}
+.ib-lead-story h3{font-size:32px;line-height:1.15}
+.ib-lead-story figcaption p{margin-top:10px;font-size:12px;color:var(--muted)}
+.ib-news-item{display:grid;grid-template-columns:110px 1fr;gap:22px;padding-bottom:27px;margin-bottom:27px;border-bottom:1px solid var(--line);align-items:start}
+.ib-news-item img{width:110px;height:138px;object-fit:contain}
+.ib-news-item h3{font-size:29px;line-height:1.15}
+.ib-news-item a:hover h3{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+.ib-news-item p{font-size:11px;color:var(--muted);margin-top:13px;line-height:1.8}
+.ib-instagram-link{font-size:11px}
+.ib-committee{padding-block:0 55px}
+.ib-committee-feature{position:relative;min-height:520px;display:flex;align-items:center;padding:50px 6%;isolation:isolate;background:var(--teal)}
+.ib-committee-feature>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:72% center;z-index:-1}
+.ib-inset{background:white;width:400px;min-height:350px;padding:37px;display:flex;flex-direction:column;align-items:start}
+.ib-inset .eyebrow{font-size:10px;color:var(--muted);margin-bottom:18px}
+.ib-inset h2{font-size:48px;line-height:1.03;letter-spacing:-.025em}
+.ib-inset>p:not(.eyebrow){font-size:14px;line-height:1.8;margin-top:20px;margin-bottom:25px}
+.ib-inset .line-link{margin-top:auto;font-size:12px}
+.ib-campus-caption{position:absolute;bottom:13px;right:20px;font-size:9px;color:#fff;text-shadow:0 1px 3px #000}
+.ib-resources{padding-bottom:62px}
+.ib-resource-feature{display:grid;grid-template-columns:1fr 1fr;background:var(--panel);min-height:390px}
+.ib-resource-feature>img{width:100%;height:100%;object-fit:cover;object-position:48% center}
+.ib-resource-copy{padding:45px;align-self:center}
+.ib-resource-copy .eyebrow{font-size:10px;margin-bottom:18px}
+.ib-resource-copy h2{font-size:36px;line-height:1.12}
+.ib-resource-copy>p:not(.eyebrow){font-size:14px;line-height:1.8;margin-top:20px;margin-bottom:20px;max-width:430px}
+.ib-resource-copy .line-link{font-size:12px}
+.ib-connect{background:var(--panel)}
+.ib-connect>.wrap{padding-block:55px;display:flex;align-items:center;justify-content:space-between;gap:40px}
+.ib-connect h2{font-size:49px}
+.ib-connect .button{font-size:12px}
+@media(min-width:1600px){.ib-hero{min-height:730px}}
+@media(max-width:1100px){.ib-about{gap:55px}.ib-news-grid{gap:30px}.ib-news-item{grid-template-columns:90px 1fr;gap:18px}.ib-news-item img{width:90px;height:113px}.ib-news-item h3{font-size:28px}.ib-resource-copy{padding:35px}}
+@media(max-width:800px){
+ .page-home .site-header{min-height:78px}.page-home .brand{width:165px}
+ .ib-hero{min-height:625px}.ib-hero-photo{object-position:42% center}.ib-hero::after{background:linear-gradient(180deg,rgba(0,12,16,.05),rgba(0,12,16,.15) 28%,rgba(0,12,16,.88) 100%)}
+ .ib-hero-content{padding-top:225px;padding-bottom:55px}.ib-hero .eyebrow{font-size:9px;margin-bottom:15px}
+ .ib-hero h1{font-size:clamp(42px,9.3vw,62px);line-height:1.05;letter-spacing:-.04em}
+ .ib-hero-intro{font-size:13px;line-height:1.85;margin-top:19px;max-width:450px}
+ .ib-hero-actions{gap:22px;margin-top:23px;flex-wrap:wrap}.ib-hero-actions .button{font-size:11px;padding:13px 17px;min-height:46px}.ib-hero-actions .line-link{font-size:11px}.ib-photo-credit{font-size:8px;bottom:14px}
+ .ib-about{grid-template-columns:1fr;gap:22px;padding-block:42px 44px}.ib-about h2{font-size:45px}.ib-about p{font-size:14px;line-height:1.9}.ib-about .button{margin-top:22px;font-size:11px}
+ .ib-latest{padding-block:0 43px}.ib-section-heading{gap:20px;padding-bottom:13px;margin-bottom:24px}.page-home .ib-section-heading h2{font-size:20px}.ib-section-heading .line-link{font-size:11px;white-space:nowrap}
+ .ib-news-grid{grid-template-columns:1fr;gap:30px}.ib-lead-story img{aspect-ratio:4/3}.ib-lead-story h3{font-size:33px}.ib-lead-story figcaption{padding-top:16px}.ib-lead-story figcaption p{font-size:11px;margin-top:8px}
+ .ib-news-item{grid-template-columns:90px 1fr;gap:20px;margin-bottom:22px;padding-bottom:22px}.ib-news-item img{width:90px;height:113px}.ib-news-item h3{font-size:28px}.ib-news-item p{font-size:10px;margin-top:12px}
+ .ib-committee{padding-bottom:38px}.ib-committee-feature{min-height:540px;padding:220px 18px 25px;align-items:end}.ib-committee-feature>img{object-position:66% center}.ib-inset{min-height:0;width:100%;padding:26px}.ib-inset .eyebrow{font-size:9px;margin-bottom:14px}.ib-inset h2{font-size:42px}.ib-inset>p:not(.eyebrow){font-size:12px;margin-top:16px;margin-bottom:17px}.ib-inset .line-link{font-size:11px}.ib-campus-caption{top:13px;bottom:auto;font-size:8px}
+ .ib-resources{padding-bottom:38px}.ib-resource-feature{grid-template-columns:1fr;min-height:0}.ib-resource-feature>img{height:230px;object-position:center}.ib-resource-copy{padding:28px}.ib-resource-copy .eyebrow{font-size:9px;margin-bottom:16px}.ib-resource-copy h2{font-size:40px}.ib-resource-copy>p:not(.eyebrow){font-size:12px;margin-top:17px;margin-bottom:17px}.ib-resource-copy .line-link{font-size:11px}
+ .ib-connect>.wrap{padding-block:38px;display:block}.ib-connect h2{font-size:40px}.ib-connect .button{margin-top:23px;font-size:11px}
+}
+@media(max-width:370px){.ib-hero h1{font-size:39px}.ib-hero-actions{gap:15px}.ib-hero-actions .button{padding:12px 13px}.ib-hero-actions .line-link{font-size:10px}.ib-section-heading h2{font-size:15px}.ib-news-item{gap:15px;grid-template-columns:80px 1fr}.ib-news-item img{width:80px;height:100px}.ib-news-item h3{font-size:26px}.ib-inset{padding:22px}.ib-inset h2{font-size:36px}}
+.ib-resource-photo{position:relative;aspect-ratio:1;min-height:0;align-self:start}
+.ib-resource-photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.ib-resource-photo figcaption{position:absolute;bottom:12px;left:16px;font-size:9px;line-height:1.6;color:#fff;background:#0e333cdd;padding:3px 7px}
+@media(max-width:800px){.ib-resource-photo{min-height:0;height:auto}.ib-resource-photo figcaption{font-size:8px}}
+
+@media(max-width:800px){
+ .page-home .brand{width:185px}
+ .ib-hero{display:block;min-height:0}
+ .ib-hero-photo{position:relative;inset:auto;z-index:auto;aspect-ratio:1780/905;height:auto;object-fit:contain}
+ .ib-hero::after{display:none}
+ .ib-hero-content{padding-top:30px;padding-bottom:35px}
+ .ib-photo-credit{top:calc(100vw * 905 / 1780 - 23px);bottom:auto;font-size:9px;color:#fff;text-shadow:0 1px 4px #000}
+ .ib-hero-intro{font-size:14px;line-height:1.75}
+ .ib-resource-copy h2{font-size:32px}
+ .ib-committee-feature{padding:0;min-height:0;display:block;background:var(--panel)}
+ .ib-committee-feature>img{position:relative;height:auto;aspect-ratio:1780/905;object-fit:contain;z-index:auto}
+ .ib-inset{width:100%;padding:27px;background:var(--panel)}
+ .ib-inset h2{font-size:34px}
+ .ib-campus-caption{top:12px;right:12px}
+}
+@media(max-width:370px){.page-home .brand{width:174px}}
