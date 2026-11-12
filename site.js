@@ -20,21 +20,6 @@ document.addEventListener('keydown', event => {
 document.addEventListener('click', event => { if (!event.target.closest('.site-header')) closeMenu(); });
 matchMedia('(min-width: 801px)').addEventListener('change', closeMenu);
 
-// Ordinary anchors work without JavaScript; this only marks the section in view.
-const departmentLinks = [...document.querySelectorAll('.department-nav a')];
-if (departmentLinks.length && 'IntersectionObserver' in window) {
-  const highlight = id => departmentLinks.forEach(link => {
-    if (link.hash === `#${id}`) link.setAttribute('aria-current', 'location');
-    else link.removeAttribute('aria-current');
-  });
-  highlight(location.hash.slice(1) || 'board');
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => { if (entry.isIntersecting) highlight(entry.target.id); });
-  }, {rootMargin: '-10% 0px -65% 0px', threshold: 0});
-  document.querySelectorAll('.department').forEach(section => observer.observe(section));
-  departmentLinks.forEach(link => link.addEventListener('click', () => highlight(link.hash.slice(1))));
-}
-
 // Keep dated events accurate even when the static site has not been rebuilt.
 function refreshEventDates() {
   document.querySelectorAll('[data-event][data-end]').forEach(event => {
